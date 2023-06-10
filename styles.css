@@ -25,7 +25,7 @@ ul {
 
 
 header {
-  background-color: #f5f5f5;
+  background-color: #fff;
   padding: 10px;
 }
 
@@ -46,7 +46,7 @@ section {
 }
 
 #home {
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 
 #about {
@@ -54,7 +54,7 @@ section {
 }
 
 #services {
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 
 #contact {
@@ -86,7 +86,7 @@ button {
 
 
 footer {
-  background-color: #f5f5f5;
+  background-color: #fff;
   padding: 10px;
   text-align: center;
 }
