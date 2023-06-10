@@ -19,7 +19,7 @@ h1, h2, h3 {
   color: #333;
 }
 
-a,p {
+a, p, li {
   text-decoration: none;
   color: #007bff;
 }
