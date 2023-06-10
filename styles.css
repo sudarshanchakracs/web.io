@@ -9,7 +9,7 @@
 
  img {
       width: 200px;
-      height: auto;
+      height: contain;
     }
 
 h1 {
