@@ -51,7 +51,7 @@ color: #000000;
   font-family: 'VT323', monospace;
   font-size: 20px;
   color: red; /* Neon green color */
-  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Neon green glowing text effect */
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00; /* Neon green glowing text effect */
 }
 
 
