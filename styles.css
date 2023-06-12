@@ -45,6 +45,15 @@ color: #000000;
   /* Add any other desired CSS properties */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.cyber-funt {
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  color: red; /* Neon green color */
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Neon green glowing text effect */
+}
+
 
 
 
