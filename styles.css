@@ -1,48 +1,40 @@
+/* styles.css */
 
- body {
-      background-image: url('background-image.jpg');
-      background-size: 100%;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
+body {
+  background-image: url('background-image.jpg');
+  background-size: 100%;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
 
- img {
-      width: 300px;
-      height: contain;
-    }
+img {
+  width: 300px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
 
 h1 {
   background-color: #f2f2f2;
   text-align: center;
-  padding: 10px ;
-  
-  color: #000000;
+  padding: 10px;
+  color: #000;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 h2, h3 {
-  
   color: #f2f2f2;
 }
+
 p1 {
-
-
-
   text-align: center;
-
-  padding: 10px ;
-
-
-
-color: #000000;
-
+  padding: 10px;
+  color: #000;
 }
 
 .funt {
-  /* CSS properties for the "funt" class */
   color: red;
   font-size: 20px;
-  /* Add any other desired CSS properties */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
@@ -50,12 +42,9 @@ color: #000000;
 .cyber-funt {
   font-family: 'VT323', monospace;
   font-size: 20px;
-  color: red; /* Neon green color */
-  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #000000; /* Neon green glowing text effect */
+  color: red;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #000;
 }
-
-
-
 
 ul {
   list-style: none;
@@ -64,13 +53,14 @@ ul {
 }
 
 li, p, a {
-    color: #00ff20;
-    background-color: rgba(39, 39, 39, 0.7)
+  color: #00ff20;
+  background-color: rgba(39, 39, 39, 0.7);
 }
 
 header {
   background-color: rgba(255, 255, 255, 1);
   padding: 10px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 nav ul {
@@ -80,33 +70,19 @@ nav ul {
 
 nav ul li {
   margin-right: 20px;
-  
 }
-
-
 
 section {
   padding: 50px 0;
   text-align: center;
-}
-
-#home {
   background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-#about {
-  background-color: rgba(0, 0, 0, 0.6);
+section:hover {
+  transform: translateY(-5px);
 }
-
-#services {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-#contact {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-
 
 form {
   display: flex;
@@ -126,13 +102,17 @@ button {
   color: #fff;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-
+button:hover {
+  background-color: #0056b3;
+  color: #e0e0e0;
+}
 
 footer {
   background-color: #fff;
   padding: 10px;
   text-align: center;
+  color: #000;
 }
-
