@@ -9,6 +9,27 @@ body {
   padding: 20px;
 }
 
+ul.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+ul.social-icons li {
+  margin: 0 10px;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+ul.social-icons li:hover {
+  transform: translateY(-10px);
+}
+
 img {
   width: 300px;
   height: auto;
@@ -119,6 +140,20 @@ section:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+section.parallax-section {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 100px 0;
+}
+
+section.parallax-section h2 {
+  color: #f2f2f2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 section ul {
   display: flex;
   justify-content: center;
@@ -136,6 +171,52 @@ section ul li {
   }
   50% {
     transform: translate(0, 10px);
+  }
+}
+
+section ul.floating-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+section ul.floating-list li {
+  margin: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+section ul.floating-list:hover li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2.typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid #f2f2f2;
+  width: 0;
+  animation: typing 3s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #f2f2f2;
   }
 }
 
