@@ -2,272 +2,97 @@
 
 body {
   background-image: url('cyber-security-background-with-shiny-elements_23-2148534260.jpg');
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   color: #fff;
   font-family: Arial, sans-serif;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
 }
 
-ul.social-icons {
-  list-style: none;
-  display: flex;
-  justify-content: center;
+header {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px 0;
   position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  top: 0;
   z-index: 100;
 }
 
-ul.social-icons li {
-  margin: 0 10px;
-  transform: translateY(0);
-  transition: transform 0.3s ease-in-out;
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-ul.social-icons li:hover {
-  transform: translateY(-10px);
+nav ul li {
+  margin: 0 15px;
+  list-style: none;
 }
 
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #f06;
+}
+
+/* Add similar styling to the other sections as needed */
+
+/* Example styling for section */
+section {
+  padding: 100px 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Example styling for headings */
+h1, h2, h3 {
+  color: #f06;
+  margin-bottom: 20px;
+}
+
+/* Example styling for buttons */
+button {
+  padding: 10px 20px;
+  background-color: #f06;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #e50000;
+}
+
+/* Example styling for images */
 img {
-  width: 300px;
+  max-width: 100%;
   height: auto;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   opacity: 0.8;
 }
 
 img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   opacity: 1;
 }
 
-h1 {
-  background-color: #f2f2f2;
-  text-align: center;
-  padding: 10px;
-  color: #000;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  position: relative;
-  animation: glitch 1s infinite;
-}
+/* Add your other custom styles below */
 
-@keyframes glitch {
-  0%, 100% {
-    transform: none;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  }
-  20% {
-    transform: translate(-2px, -2px);
-    clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%);
-  }
-  40% {
-    transform: translate(2px, 2px);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  }
-  60% {
-    transform: translate(-2px, 0);
-    clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%);
-  }
-  80% {
-    transform: translate(2px, 0);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  }
-}
-
-h2, h3 {
-  color: #f2f2f2;
-}
-
-p1 {
-  text-align: center;
-  padding: 10px;
-  color: #000;
-}
-
-.funt {
-  color: red;
-  font-size: 20px;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
-.cyber-funt {
-  font-family: 'VT323', monospace;
-  font-size: 20px;
-  color: red;
-  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #000;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-li, p, a {
-  color: #00ff20;
-  background-color: rgba(39, 39, 39, 0.7);
-}
-
-header {
-  background-color: rgba(255, 255, 255, 1);
-  padding: 10px;
-  transition: background-color 0.3s ease-in-out, background-image 0.3s ease-in-out;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
-  background-attachment: fixed;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-section {
-  padding: 50px 0;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-section:hover {
-  transform: translateY(-5px);
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-section.parallax-section {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 100px 0;
-}
-
-section.parallax-section h2 {
-  color: #f2f2f2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-section ul {
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-
-section ul li {
-  transform: translate(0, 0);
-  animation: float 5s infinite;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, 10px);
-  }
-}
-
-section ul.floating-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-section ul.floating-list li {
-  margin: 10px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-
-section ul.floating-list:hover li {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-h2.typing-text {
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 0.15em solid #f2f2f2;
-  width: 0;
-  animation: typing 3s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #f2f2f2;
-  }
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-input, textarea {
-  margin-bottom: 10px;
-  padding: 10px;
-  width: 300px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  position: relative;
-  overflow: hidden;
-}
-
-button::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
-  opacity: 0;
-  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-button:hover::before {
-  width: 120%;
-  opacity: 1;
-}
-
-button:hover {
-  background-color: #0056b3;
-  color: #e0e0e0;
-}
-
-footer {
-  background-color: #fff;
-  padding: 10px;
-  text-align: center;
-  color: #000;
-}
+/* ... */
