@@ -1,98 +1,117 @@
-/* styles.css */
-
 body {
-  background-image: url(https://github.com/sudarshanchakracs/web.io/blob/main/background-image.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url('background-image.jpg');
+  background-size: 100%;
   color: #fff;
   font-family: Arial, sans-serif;
-  margin: 0;
+  padding: 20px;
+}
+
+img {
+  width: 300px;
+  height: contain;
+}
+
+h1 {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  color: #000000;
+}
+
+h2, h3 {
+  color: #f2f2f2;
+}
+
+p1 {
+  text-align: center;
+  padding: 10px;
+  color: #000000;
+}
+
+.funt {
+  /* CSS properties for the "funt" class */
+  color: red;
+  font-size: 20px;
+  /* Add any other desired CSS properties */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.cyber-funt {
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  color: red; /* Neon green color */
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #000000; /* Neon green glowing text effect */
+}
+
+ul {
+  list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+li, p, a {
+  color: #00ff20;
+  background-color: rgba(39, 39, 39, 0.7);
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 20px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 100;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 10px;
 }
 
 nav ul {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
 }
 
 nav ul li {
-  margin: 0 15px;
-  list-style: none;
+  margin-right: 20px;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  transition: color 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-  color: #f06;
-}
-
-/* Add similar styling to the other sections as needed */
-
-/* Example styling for section */
 section {
-  padding: 100px 0;
+  padding: 50px 0;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-section:hover {
-  transform: translateY(-5px);
-  background-color: rgba(0, 0, 0, 0.8);
+#home {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* Example styling for headings */
-h1, h2, h3 {
-  color: #f06;
-  margin-bottom: 20px;
+#about {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* Example styling for buttons */
+#services {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#contact {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
 button {
   padding: 10px 20px;
-  background-color: #f06;
+  background-color: #007bff;
   color: #fff;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  border-radius: 5px;
 }
 
-button:hover {
-  background-color: #e50000;
+footer {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
 }
-
-/* Example styling for images */
-img {
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  opacity: 0.8;
-}
-
-img:hover {
-  transform: scale(1.05);
-  opacity: 1;
-}
-
-/* Add your other custom styles below */
-
-/* ... */
