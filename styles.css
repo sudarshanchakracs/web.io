@@ -22,6 +22,7 @@ header {
   top: 0;
   z-index: 1000;
   transition: top 0.3s;
+  height: 60px; /* Adjusted header height */
 }
 
 .logo-container {
@@ -210,14 +211,20 @@ footer {
 
   .menu-icon {
     display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
   }
 
   nav ul li {
     margin: 10px 0;
   }
 
-  .slider-buttons .prev, .slider-buttons .next {
-    padding: 0.5rem;
+  .slider {
+    margin-top: 50px; /* Adjust margin top for smaller header */
   }
 
   .contact-info {
