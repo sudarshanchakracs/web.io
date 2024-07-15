@@ -1,117 +1,108 @@
+/* Basic styles */
 body {
-  background-image: url('background-image.jpg');
-  background-size: 100%;
-  color: #fff;
   font-family: Arial, sans-serif;
-  padding: 20px;
-}
-
-img {
-  width: 300px;
-  height: contain;
-}
-
-h1 {
-  background-color: #f2f2f2;
-  text-align: center;
-  padding: 10px;
-  color: #000000;
-}
-
-h2, h3 {
-  color: #f2f2f2;
-}
-
-p1 {
-  text-align: center;
-  padding: 10px;
-  color: #000000;
-}
-
-.funt {
-  /* CSS properties for the "funt" class */
-  color: red;
-  font-size: 20px;
-  /* Add any other desired CSS properties */
-}
-
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
-.cyber-funt {
-  font-family: 'VT323', monospace;
-  font-size: 20px;
-  color: red; /* Neon green color */
-  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #000000; /* Neon green glowing text effect */
-}
-
-ul {
-  list-style: none;
-  padding: 0;
+  line-height: 1.6;
   margin: 0;
-}
-
-li, p, a {
-  color: #00ff20;
-  background-color: rgba(39, 39, 39, 0.7);
+  padding: 0;
+  color: #333;
 }
 
 header {
-  background-color: rgba(255, 255, 255, 1);
-  padding: 10px;
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
 }
 
 nav ul {
-  display: flex;
-  justify-content: center;
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li {
-  margin-right: 20px;
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;
+  height: auto;
 }
 
 section {
-  padding: 50px 0;
-  text-align: center;
+  padding: 1rem;
 }
 
-#home {
-  background-color: rgba(0, 0, 0, 0.6);
+h1, h2 {
+  color: #333;
 }
 
-#about {
-  background-color: rgba(0, 0, 0, 0.6);
+h1 {
+  margin-top: 0;
 }
 
-#services {
-  background-color: rgba(0, 0, 0, 0.6);
+ul {
+  padding-left: 1.2em;
 }
 
-#contact {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-input, textarea {
-  margin-bottom: 10px;
-  padding: 10px;
-  width: 300px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+ul li {
+  margin-bottom: 0.5em;
 }
 
 footer {
-  background-color: #fff;
-  padding: 10px;
+  background: #333;
+  color: #fff;
   text-align: center;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header {
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
 }
