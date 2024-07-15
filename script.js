@@ -1,23 +1,44 @@
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
+let slideIndex = 0;
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.style.display = i === index ? 'block' : 'none';
+function showSlides() {
+  const slides = document.querySelectorAll('.slide');
+  slides.forEach((slide, index) => {
+    slide.style.display = 'none';
   });
-}
 
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = 'block';
+
+  setTimeout(showSlides, 5000); // Change slide every 5 seconds
 }
 
 function previousSlide() {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  showSlide(currentSlide);
+  const slides = document.querySelectorAll('.slide');
+  slides.forEach((slide, index) => {
+    slide.style.display = 'none';
+  });
+
+  slideIndex--;
+  if (slideIndex < 1) {
+    slideIndex = slides.length;
+  }
+  slides[slideIndex - 1].style.display = 'block';
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  showSlide(currentSlide);
-  setInterval(nextSlide, 3000); // Change slide every 3 seconds
-});
+function nextSlide() {
+  const slides = document.querySelectorAll('.slide');
+  slides.forEach((slide, index) => {
+    slide.style.display = 'none';
+  });
+
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = 'block';
+}
+
+document.addEventListener('DOMContentLoaded', showSlides);
