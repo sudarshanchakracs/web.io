@@ -1,6 +1,9 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 /* Basic styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -11,33 +14,54 @@ header {
   background: #333;
   color: #fff;
   padding: 1rem 0;
-  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 nav ul li {
-  display: inline;
   margin: 0 10px;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  padding: 5px 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background: #555;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .logo {
-  display: block;
-  margin: 0 auto;
   max-width: 150px;
   height: auto;
 }
 
 section {
-  padding: 1rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 h1, h2 {
@@ -46,14 +70,25 @@ h1, h2 {
 
 h1 {
   margin-top: 0;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 ul {
   padding-left: 1.2em;
+  margin-bottom: 1.5rem;
 }
 
 ul li {
   margin-bottom: 0.5em;
+  line-height: 1.4;
 }
 
 footer {
@@ -61,7 +96,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem 0;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 img {
@@ -69,23 +104,31 @@ img {
   height: auto;
   display: block;
   margin: 1rem 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
   nav ul {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   nav ul li {
-    display: block;
     margin: 10px 0;
   }
 
   header {
     text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
   }
 }
 
