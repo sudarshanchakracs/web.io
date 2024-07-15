@@ -16,10 +16,12 @@ header {
   background-size: cover;
   background-position: center;
   color: #fff;
-  padding: 2rem 0;
-  position: sticky;
+  padding: 0.5rem 0;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1000;
+  transition: top 0.3s;
 }
 
 .logo-container {
@@ -32,7 +34,7 @@ header {
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 100px; /* Made the logo smaller */
   height: auto;
 }
 
@@ -44,9 +46,16 @@ header {
 }
 
 nav {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 1rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
 }
 
 nav ul {
@@ -58,7 +67,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 nav ul li a {
@@ -79,6 +88,7 @@ nav ul li a:hover {
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
+  margin-top: 60px; /* Adjust for header height */
 }
 
 .slides {
@@ -155,21 +165,25 @@ ul {
   padding-left: 1rem;
 }
 
-.contact-info p {
-  margin: 0.5rem 0;
+.contact-info {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #eee;
+  margin-top: 1rem;
 }
 
-/* Responsive styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive styling */
 @media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 5px 0;
-  }
-
   .logo-container {
     flex-direction: column;
     text-align: center;
@@ -179,8 +193,30 @@ ul {
     margin-top: 10px;
   }
 
-  .slider-buttons .prev,
-  .slider-buttons .next {
+  nav ul {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+  }
+
+  nav ul.show {
+    display: block;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .slider-buttons .prev, .slider-buttons .next {
     padding: 0.5rem;
   }
 
