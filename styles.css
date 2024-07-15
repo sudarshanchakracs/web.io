@@ -7,12 +7,12 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #000000;
   background-color: #f8f8f8;
 }
 
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('cyber-security-background-with-shiny-elements_23-2148534260.jpg');
+  background:rgb(9, 0, 51);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -80,7 +80,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .slider {
@@ -113,8 +113,8 @@ nav ul li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  filter: blur(5px); /* Apply blur effect */
+  background: rgba(0, 0, 0, 0.8);
+  filter: blur(9px); /* Apply blur effect */
   z-index: 1;
 }
 
@@ -131,6 +131,7 @@ nav ul li a:hover {
   top: 50%;
   display: flex;
   justify-content: space-between;
+  z-index: 8000;
   transform: translateY(-50%);
 }
 
@@ -148,7 +149,7 @@ section {
   margin: 0 auto;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
   margin-bottom: 2rem;
 }
 
