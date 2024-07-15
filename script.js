@@ -2,7 +2,7 @@ let slideIndex = 0;
 
 function showSlides() {
   const slides = document.querySelectorAll('.slide');
-  slides.forEach((slide, index) => {
+  slides.forEach((slide) => {
     slide.style.display = 'none';
   });
 
@@ -17,7 +17,7 @@ function showSlides() {
 
 function previousSlide() {
   const slides = document.querySelectorAll('.slide');
-  slides.forEach((slide, index) => {
+  slides.forEach((slide) => {
     slide.style.display = 'none';
   });
 
@@ -30,7 +30,7 @@ function previousSlide() {
 
 function nextSlide() {
   const slides = document.querySelectorAll('.slide');
-  slides.forEach((slide, index) => {
+  slides.forEach((slide) => {
     slide.style.display = 'none';
   });
 
@@ -42,3 +42,22 @@ function nextSlide() {
 }
 
 document.addEventListener('DOMContentLoaded', showSlides);
+
+let lastScrollTop = 0;
+const header = document.getElementById('header');
+
+window.addEventListener('scroll', () => {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    header.style.top = '-80px'; // Hide header when scrolling down
+  } else {
+    header.style.top = '0'; // Show header when scrolling up
+  }
+  lastScrollTop = scrollTop;
+});
+
+function toggleMenu() {
+  const menu = document.getElementById('menu');
+  menu.classList.toggle('show');
+}
