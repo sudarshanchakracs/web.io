@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sudarshan Chakra Cyber Security</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
   <header>
+    <div class="logo-container">
+      <img src="/logo.png" alt="Website Logo" class="logo">
+      <p class="visit-note">Welcome to Sudarshan Chakra Cyber Security!</p>
+    </div>
     <nav>
-      <img src="cyber-security-background-with-shiny-elements_23-2148534260.jpg" alt="Website Logo" class="logo">
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -21,127 +23,63 @@
   </header>
 
   <section id="home">
-    <h1>Sudarshan Chakra Cyber Security &reg;</h1>
-    <p>Welcome to our Sudarshan Chakra Cyber Security website!</p>
-    <p>We are dedicated to providing you with up-to-date information, resources, and tips to help you protect your digital life. In today's interconnected world, cyber threats are more prevalent than ever before, and it's crucial to stay informed and take proactive measures to safeguard your online presence.</p>
-
-    <h2>Cyber Threat Landscape</h2>
-    <img src="Cyber Threat Landscape.jpg" alt="Cyber Threat Landscape">
-    <ul>
-      <li>Stay informed about the current cyber threat landscape, including emerging threats, recent data breaches, and notable security incidents.</li>
-      <li>Explore different types of cyber attacks, such as phishing, malware, ransomware, social engineering, and DDoS attacks.</li>
-      <li>Understand the motives behind cyber attacks, including financial gain, espionage, activism, or disruption.</li>
-    </ul>
-
-    <h2>Cyber Security Basics</h2>
-    <img src="Cyber Security Basics.jpg" alt="Cyber Security Basics">
-    <ul>
-      <li>Learn the fundamental concepts of cyber security, including confidentiality, integrity, and availability (CIA triad).</li>
-      <li>Discover essential security practices, such as strong passwords, two-factor authentication (2FA), and regular software updates.</li>
-      <li>Understand the importance of secure browsing, safe email practices, and social media privacy settings.</li>
-    </ul>
-
-    <h2>Network Security</h2>
-    <img src="Network Security.jpg" alt="Network Security">
-    <ul>
-      <li>Explore the world of network security, including firewalls, intrusion detection systems (IDS), and virtual private networks (VPNs).</li>
-      <li>Learn about secure wireless network setups, network segmentation, and secure remote access.</li>
-      <li>Understand common network vulnerabilities and how to mitigate them effectively.</li>
-    </ul>
-
-    <h2>Data Protection</h2>
-    <img src="Data Protection.jpg" alt="Data Protection">
-    <ul>
-      <li>Discover strategies for safeguarding your sensitive data, both at rest and in transit.</li>
-      <li>Learn about encryption techniques, secure data storage, and secure file sharing practices.</li>
-      <li>Understand the implications of data privacy regulations, such as the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA).</li>
-    </ul>
-
-    <h2>Secure Development</h2>
-    <img src="Secure Development.jpg" alt="Secure Development">
-    <ul>
-      <li>Gain insights into secure coding practices, secure software development life cycle (SDLC), and vulnerability management.</li>
-      <li>Learn about common programming vulnerabilities, such as cross-site scripting (XSS) and SQL injection, and how to prevent them.</li>
-      <li>Explore secure coding languages, frameworks, and libraries.</li>
-    </ul>
-
-    <h2>Incident Response and Recovery</h2>
-    <img src="Incident Response and Recovery.jpg" alt="Incident Response and Recovery">
-    <ul>
-      <li>Understand the importance of incident response planning and preparedness.</li>
-      <li>Learn how to detect, respond to, and recover from security incidents effectively.</li>
-      <li>Explore incident management frameworks and best practices for handling data breaches and cyber attacks.</li>
-    </ul>
-
-    <h2>Emerging Technologies</h2>
-    <img src="Emerging Technologies.jpg" alt="Emerging Technologies">
-    <ul>
-      <li>Stay updated on the latest trends in cyber security, such as artificial intelligence (AI), machine learning (ML), blockchain, and Internet of Things (IoT) security.</li>
-      <li>Explore the challenges and opportunities presented by emerging technologies and their impact on cyber security.</li>
-    </ul>
-
-    <h2>Resources and Tools</h2>
-    <img src="Resources and Tools.jpg" alt="Resources and Tools">
-    <ul>
-      <li>Access a curated collection of helpful resources, including books, whitepapers, online courses, and security tools.</li>
-      <li>Find recommended software and services for antivirus, anti-malware, password management, and encryption.</li>
-      <li>Stay connected with our community through forums, blogs, and newsletters.</li>
-    </ul>
-
-    <p>We hope that our website provides you with valuable insights and guidance to navigate the complex world of cyber security. Remember, staying informed and adopting best practices are the first steps towards protecting yourself and your digital assets. Stay safe and secure online!</p>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <h1>Sudarshan Chakra Cyber Security &reg;</h1>
+          <p>Welcome to our Sudarshan Chakra Cyber Security website!</p>
+        </div>
+        <div class="slide">
+          <h2>Cyber Threat Landscape</h2>
+          <ul>
+            <li>Stay informed about the current cyber threat landscape, including emerging threats, recent data breaches, and notable security incidents.</li>
+            <li>Explore different types of cyber attacks, such as phishing, malware, ransomware, social engineering, and DDoS attacks.</li>
+            <li>Understand the motives behind cyber attacks, including financial gain, espionage, activism, or disruption.</li>
+          </ul>
+        </div>
+        <div class="slide">
+          <h2>Cyber Security Basics</h2>
+          <ul>
+            <li>Learn the fundamental concepts of cyber security, including confidentiality, integrity, and availability (CIA triad).</li>
+            <li>Discover essential security practices, such as strong passwords, two-factor authentication (2FA), and regular software updates.</li>
+            <li>Understand the importance of secure browsing, safe email practices, and social media privacy settings.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="slider-buttons">
+        <button class="prev" onclick="previousSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+    </div>
   </section>
 
   <section id="about">
     <h1>About Us</h1>
     <p>We are a team of passionate cyber security professionals dedicated to promoting awareness and providing valuable resources to help individuals and organizations protect themselves from cyber threats.</p>
-
     <h2>Our Mission</h2>
     <img src="Our Mission.jpg" alt="Our Mission">
     <p>Our mission is to empower individuals and businesses with the knowledge and tools necessary to navigate the ever-evolving landscape of cyber security. We believe that education and proactive measures are key to mitigating risks and ensuring a secure online environment for everyone.</p>
-
-    <h2>What We Offer</h2>
-    <img src="What We Offer.jpg" alt="What We Offer">
-    <p>On our website, you will find a wealth of information and resources related to cyber security. We cover a wide range of topics, including the latest threats, best practices, emerging technologies, and incident response strategies. Whether you're a beginner or an experienced professional, our content is designed to cater to various levels of expertise.</p>
-
-    <h2>Why Choose Us?</h2>
-    <ul>
-      <img src="Why Choose Us.jpg" alt="Why Choose Us">
-      <li><strong>Expertise:</strong> Our team consists of experienced cyber security professionals with a deep understanding of the industry. We stay up-to-date with the latest trends, techniques, and technologies to provide you with accurate and relevant information.</li>
-      <li><strong>Comprehensive Content:</strong> We strive to cover all aspects of cyber security, from foundational concepts to advanced techniques. Our content is carefully curated to address the needs of individuals, businesses, and organizations.</li>
-      <li><strong>User-Friendly Approach:</strong> We believe in making cyber security accessible to everyone. Our content is presented in a user-friendly manner, ensuring that complex topics are explained in a clear and understandable way.</li>
-      <li><strong>Community Engagement:</strong> We foster a vibrant community where individuals can connect, share knowledge, and seek advice. Our forums, blogs, and newsletters provide opportunities for engagement and collaboration.</li>
-    </ul>
-
-    <p>Thank you for visiting our Cyber Security website. Stay safe and secure!</p>
   </section>
 
   <section id="services">
     <h1>Our Services</h1>
     <p>At our Cyber Security company, we offer a range of services designed to help individuals and organizations strengthen their security posture and protect their digital assets. Our team of experts is committed to delivering top-notch solutions tailored to meet your specific needs.</p>
+  </section>
 
-    <h2>1. Vulnerability Assessments</h2>
-    <img src="Vulnerability Assessments.jpg" alt="Vulnerability Assessments">
-    <p>We conduct comprehensive vulnerability assessments to identify potential weaknesses in your network, systems, and applications. Our team utilizes industry-leading tools and techniques to assess vulnerabilities and provide actionable recommendations to mitigate risks.</p>
-
-    <h2>2. Penetration Testing</h2>
-    <img src="Penetration Testing.jpg" alt="Penetration Testing">
-    <p>Our skilled ethical hackers perform thorough penetration tests to simulate real-world attacks and uncover vulnerabilities that could be exploited by malicious actors. We employ a systematic approach to identify security gaps and provide detailed reports on findings along with remediation strategies.</p>
-
-    <h2>3. Security Audits</h2>
-    <img src="Security Audits.jpg" alt="Security Audits">
-    <p>We offer in-depth security audits to assess the effectiveness of your existing security measures, policies, and procedures. Our experts review your organization's security practices, conduct interviews, and perform technical assessments to provide a comprehensive evaluation of your overall security posture.</p>
-
-    <h2>4. Security Awareness Training</h2>
-    <img src="Security Awareness Training.jpg" alt="Security Awareness Training">
-    <p>We provide tailored security awareness training programs to educate your employees about the latest cyber threats and best practices for staying safe online. Our training covers topics such as phishing, social engineering, password management, and safe browsing habits.</p>
-
-    <h2>5. Incident Response Planning</h2>
-    <img src="Incident Response Planning.jpg" alt="Incident Response Planning">
-    <p>We assist in developing comprehensive incident response plans to ensure your organization is prepared to handle security incidents effectively. Our experts work with you to create customized plans that include detection, containment, eradication, and recovery procedures.</p>
+  <section id="contact">
+    <h1>Contact Us</h1>
+    <p>If you have any questions or inquiries, please feel free to contact us. We are here to assist you with your cyber security needs.</p>
+    <div class="contact-info">
+      <p><strong>Email:</strong> info@sudarshanchakracybersecurity.com</p>
+      <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+      <p><strong>Address:</strong> 123 Cyber Street, Cyber City, CYB 45678</p>
+    </div>
   </section>
 
   <footer>
     <p>&copy; 2024 Sudarshan Chakra Cyber Security. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script> 
 </body>
 </html>
