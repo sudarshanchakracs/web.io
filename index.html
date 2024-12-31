@@ -152,133 +152,138 @@
 <body>
     <header id="header">
         <div class="logo-container">
-          <img src="logo.png" alt="Website Logo" class="logo">
-          <div class="visit-note">Empowering Cyber Safety in a Digital World</div>
+            <img src="logo.png" alt="Website Logo" class="logo">
+            <div class="visit-note">Empowering Cyber Safety in a Digital World</div>
         </div>
         <nav>
-          <!-- Hamburger Menu Icon -->
-          <button class="menu-icon" aria-label="Toggle Menu" onclick="toggleMenu()">&#9776;</button>
-          <ul id="menu">
-            <li><a class="nav-link" href="#home">Home</a></li>
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#services">Services</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-            <li><a class="nav-link" href="#contact"></a></li>
-          </ul>
+            <!-- Hamburger Menu Icon -->
+            <button class="menu-icon" aria-label="Toggle Menu" onclick="toggleMenu()">&#9776;</button>
+            <ul id="menu">
+                <li><a class="nav-link" href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a class="nav-link" href="#about" onclick="closeMenu()">About</a></li>
+                <li><a class="nav-link" href="#services" onclick="closeMenu()">Services</a></li>
+                <li><a class="nav-link" href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
         </nav>
         <a></a>
-      </header>
-      
-      <!-- CSS -->
-      <style>
+    </header>
+    
+    <!-- CSS -->
+    <style>
         /* Base styles */
         body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-      background-color: #0f3460;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f3460;
         }
-      
+    
         /* Header styles */
         #header {
-          background-color: #2c3e50;
-          padding: 10px 20px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          color: #fff;
+            background-color: #2c3e50;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
         }
-      
+    
         .logo-container {
-          display: flex;
-          align-items: center;
+            display: flex;
+            align-items: center;
         }
-      
+    
         .logo {
-          width: 50px;
-          height: auto;
-          margin-right: 10px;
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
         }
-      
+    
         .visit-note {
-          font-size: 14px;
-          font-weight: 300;
+            font-size: 14px;
+            font-weight: 300;
         }
-      
+    
         nav {
-          position: relative;
+            position: relative;
         }
-      
+    
         /* Menu icon (Hamburger) */
         .menu-icon {
-          display: none;
-          background: none;
-          border: none;
-          font-size: 30px;
-          color: #fff;
-          cursor: pointer;
+            display: none;
+            background: none;
+            border: none;
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
         }
-      
+    
         /* Menu list styles */
         #menu {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
         }
-      
+    
         #menu li {
-          margin: 0 15px;
+            margin: 0 15px;
         }
-      
+    
         #menu a {
-          color: #fff;
-          text-decoration: none;
-          font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
         }
-      
+    
         #menu a:hover {
-          color: #00fddc;
+            color: #00fddc;
         }
-      
+    
         /* Responsive Menu (Mobile View) */
         @media screen and (max-width: 768px) {
-          .menu-icon {
-            display: block;
-          }
-      
-          #menu {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 50px;
-            right: 20px;
-            background-color: #2c3e50;
-            width: 200px;
-            padding: 20px;
-            border-radius: 8px;
-          }
-      
-          #menu li {
-            margin: 10px 0;
-            text-align: center;
-          }
-      
-          #menu.active {
-            display: flex;
-          }
+            .menu-icon {
+                display: block;
+            }
+    
+            #menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 50px;
+                right: 20px;
+                background-color: #2c3e50;
+                width: 200px;
+                padding: 20px;
+                border-radius: 8px;
+            }
+    
+            #menu li {
+                margin: 10px 0;
+                text-align: center;
+            }
+    
+            #menu.active {
+                display: flex;
+            }
         }
-      </style>
-      
-      <!-- JavaScript -->
-      <script>
+    </style>
+    
+    <!-- JavaScript -->
+    <script>
         // Toggle the menu on mobile
         function toggleMenu() {
-          const menu = document.getElementById('menu');
-          menu.classList.toggle('active');
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
         }
-      </script>
-      
+    
+        // Close the menu when a menu item is clicked
+        function closeMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.remove('active');
+        }
+    </script>
+    
 
   <section id="home">
     <div class="slider">
