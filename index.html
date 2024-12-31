@@ -4,95 +4,255 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sudarshan Chakra Cyber Security</title>
-  <br>
-  <dev> </dev>
-  <link rel="stylesheet" href="styles.css">
- 
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #1a1a2e;
+      color: #ffffff;
+    }
+
+    /* Header */
+    #header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0f3460;
+      padding: 15px 30px;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .logo {
+      height: 60px;
+    }
+
+    .visit-note {
+      font-size: 16px;
+      color: #e94560;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00fddc;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    /* Slider */
+    .slider {
+      position: relative;
+      height: 80vh;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .slide .content h1, .slide .content h2 {
+      color: #00fddc;
+      font-size: 48px;
+    }
+
+    .slide .content p {
+      font-size: 20px;
+      line-height: 1.6;
+      max-width: 800px;
+    }
+
+    .slider-buttons button {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #ffffff;
+      border: none;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .slider-buttons button:hover {
+      background-color: #e94560;
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 30px;
+      text-align: center;
+    }
+
+    section h1, section h2 {
+      font-size: 36px;
+      color: #00fddc;
+    }
+
+    section p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-top: 20px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #0f3460;
+      padding: 15px;
+      font-size: 16px;
+    }
+  </style>
 </head>
 <body>
   <header id="header">
     <div class="logo-container">
-        
       <img src="logo.png" alt="Website Logo" class="logo">
-      <div class="visit-note">Visit Note: Ensuring Your Cyber Safety</div>
+      <div class="visit-note">Empowering Cyber Safety in a Digital World</div>
     </div>
     <nav>
-      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      <button class="menu-icon" aria-label="Toggle Menu" onclick="toggleMenu()">&#9776;</button>
       <ul id="menu">
-        <li><a style="color: rgb(255, 32, 32);" href="#home">Home</a></li>
-        <li><a style="color: rgb(255, 32, 32);" href="#about">About</a></li>
-        <li><a style="color: rgb(255, 32, 32);" href="#services">Services</a></li>
-        <li><a style="color: rgb(255, 32, 32);" href="#contact">Contact</a></li>
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#services">Services</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <br><br><br>
+
   <section id="home">
     <div class="slider">
       <div class="slides">
-        <div class="slide" style="background-image: url('/logo.png'); position: relative;">
+        <div class="slide" style="background-image: url('tech-bg1.jpg');">
           <div class="content">
-            <h1>Sudarshan Chakra Cyber Security &reg;</h1>
-            <p>Welcome to our Sudarshan Chakra Cyber Security website! We are dedicated to providing you with up-to-date information, resources, and tips to help you protect your digital life.</p>
+            <h1>Welcome to Sudarshan Chakra Cyber Security</h1>
+            <p>
+              Your trusted partner in navigating the ever-changing digital landscape. 
+              We provide innovative solutions, cutting-edge research, and reliable resources to help individuals and businesses stay ahead of cyber threats. 
+              With a focus on empowering you with knowledge and skills, we aim to create a safer online world for everyone.
+            </p>
           </div>
         </div>
-        <div class="slide" style="background-image: url('Cyber Threat Landscape.jpg');">
+        <div class="slide" style="background-image: url('cyber-bg2.jpg');">
           <div class="content">
-            <h2>Cyber Threat Landscape</h2>
-            <ul>
-              <li>Stay informed about the current cyber threat landscape, including emerging threats, recent data breaches, and notable security incidents.</li>
-              <li>Explore different types of cyber attacks, such as phishing, malware, ransomware, social engineering, and DDoS attacks.</li>
-              <li>Understand the motives behind cyber attacks, including financial gain, espionage, activism, or disruption.</li>
-            </ul>
+            <h2>Understanding Cyber Threats</h2>
+            <p>
+              Cybersecurity is more critical than ever. From phishing scams to sophisticated ransomware attacks, 
+              the digital world is rife with dangers. At Sudarshan Chakra Cyber Security, 
+              we keep you updated on the latest trends, attack methods, and prevention strategies.
+            </p>
           </div>
         </div>
-        <!-- Add other slides similarly -->
       </div>
       <div class="slider-buttons">
         <button class="prev" onclick="previousSlide()">&#10094;</button>
         <button class="next" onclick="nextSlide()">&#10095;</button>
       </div>
-      
     </div>
   </section>
 
   <section id="about">
     <h1>About Us</h1>
-    <p>We are a team of passionate cyber security professionals dedicated to promoting awareness and providing valuable resources to help individuals and organizations protect themselves from cyber threats.</p>
+    <p>
+      Sudarshan Chakra Cyber Security is a leading name in promoting cybersecurity awareness and education.
+      Our team comprises experts with a deep understanding of emerging threats and the latest defensive strategies. 
+      Through workshops, training sessions, and hands-on projects, we ensure that you are well-equipped to tackle digital risks.
+    </p>
     <h2>Our Mission</h2>
-    <p>Our mission is to empower individuals and businesses with the knowledge and tools necessary to navigate the ever-evolving landscape of cyber security. We believe that education and proactive measures are key to mitigating risks and ensuring a secure online environment for everyone.</p>
+    <p>
+      To empower individuals, businesses, and organizations with the tools and knowledge required to safeguard their digital presence.
+      Our goal is to foster a culture of cybersecurity vigilance that ensures safety in every corner of the online world.
+    </p>
   </section>
 
   <section id="services">
     <h1>Our Services</h1>
-    <h2>1. Vulnerability Assessments</h2>
-    <p>We conduct comprehensive vulnerability assessments to identify potential weaknesses in your network, systems, and applications.</p>
+    <h2>1. Comprehensive Security Audits</h2>
+    <p>
+      A meticulous evaluation of your organization's security infrastructure to identify vulnerabilities 
+      and ensure compliance with industry standards. Gain actionable insights to strengthen your defenses.
+    </p>
     <h2>2. Penetration Testing</h2>
-    <p>Our skilled ethical hackers perform thorough penetration tests to simulate real-world attacks and uncover vulnerabilities.</p>
-    <h2>3. Security Audits</h2>
-    <p>We offer in-depth security audits to assess the effectiveness of your existing security measures, policies, and procedures.</p>
-    <!-- Add other services similarly -->
+    <p>
+      Simulate real-world cyberattacks with our expert penetration testers. Identify weak points in your system 
+      before malicious actors exploit them, and receive tailored recommendations for improvement.
+    </p>
+    <h2>3. Tailored Cybersecurity Training</h2>
+    <p>
+      Interactive training programs designed for all knowledge levels. From beginners to seasoned professionals, 
+      our courses cover topics like ethical hacking, malware analysis, and network defense strategies.
+    </p>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Provide contact details for users to get in touch with your company.</p>
     <form>
-      <input type="text" name="name" placeholder="Your Name">
-      <input type="email" name="email" placeholder="Your Email">
-      <textarea name="message" placeholder="Your Message"></textarea>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
     <div class="contact-info">
       <p>Email: <a href="mailto:sudarsanachakra.cs@gmail.com">sudarsanachakra.cs@gmail.com</a></p>
-      <p>Phone: +91 86673 75443</p>
+      <p>Phone: +91 8682875077</p>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2023 Your Cyber Security Company. All rights reserved.</p>
+    <p>&copy; 2024 Sudarshan Chakra Cyber Security. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+    }
+
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      const slides = document.querySelector('.slides');
+      const totalSlides = slides.children.length;
+      currentSlide = (index + totalSlides) % totalSlides;
+      slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    function previousSlide() {
+      showSlide(currentSlide - 1);
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+  </script>
 </body>
 </html>
