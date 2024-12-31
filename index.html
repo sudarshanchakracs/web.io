@@ -604,119 +604,155 @@
     <h2>Contact Us</h2>
     <p>We’d love to hear from you! Reach out to us for inquiries, collaborations, or any assistance you need regarding cybersecurity.</p>
     <div class="contact-container">
-      <form class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <div class="contact-info">
-        <p><strong>Email:</strong> <a href="mailto:sudarsanachakra.cs@gmail.com">sudarsanachakra.cs@gmail.com</a></p>
-        <p><strong>Phone:</strong> +91 86673 75443</p>
-        <p><strong>Address:</strong> Sudarshan Chakra Cyber Security HQ, Bengaluru, India</p>
-      </div>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:sudarsanachakra.cs@gmail.com">sudarsanachakra.cs@gmail.com</a></p>
+            <p><strong>Phone:</strong> +91 86673 75443</p>
+            <p><strong>Address:</strong> Sudarshan Chakra Cyber Security HQ, Bengaluru, India</p>
+        </div>
     </div>
-  </section>
+    
+</section>
   
   <style>
     #contact {
-      background-color: #0f3460; /* Dark theme background */
-      padding: 60px 30px;
-      text-align: center;
-      color: #ffffff;
-    }
-  
-    #contact h2 {
-      font-size: 36px;
-      color: #00fddc;
-      margin-bottom: 20px;
-    }
-  
-    #contact p {
-      font-size: 18px;
-      margin-bottom: 40px;
-      line-height: 1.6;
-    }
-  
+    background-color: #0f3460; /* Dark theme background */
+    padding: 60px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#contact h2 {
+    font-size: 36px;
+    color: #00fddc;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px; /* Prevent content from stretching too much */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Add some padding to prevent content touching the edges */
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Center form items */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    border: 1px solid #00fddc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    box-shadow: 0 0 10px 2px #00fddc;
+    transform: scale(1.02);
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: #e94560;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ff6767;
+    transform: scale(1.05);
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: #00fddc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #e94560;
+}
+
+@media screen and (max-width: 768px) {
     .contact-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
+        flex-direction: column;
+        gap: 20px;
     }
-  
+
     .contact-form {
-      flex: 1;
-      max-width: 500px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+        max-width: 100%; /* Allow the form to take full width on smaller screens */
     }
-  
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 15px;
-      background-color: #1a1a2e;
-      color: #ffffff;
-      border: 1px solid #00fddc;
-      border-radius: 5px;
-      font-size: 16px;
-      outline: none;
-      transition: box-shadow 0.3s ease, transform 0.3s ease;
-    }
-  
-    .contact-form input:focus, .contact-form textarea:focus {
-      box-shadow: 0 0 10px 2px #00fddc;
-      transform: scale(1.02);
-    }
-  
-    .contact-form textarea {
-      height: 120px;
-      resize: none;
-    }
-  
-    .contact-form button {
-      padding: 15px;
-      background-color: #e94560;
-      color: #ffffff;
-      font-size: 18px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-  
-    .contact-form button:hover {
-      background-color: #ff6767;
-      transform: scale(1.05);
-    }
-  
+
     .contact-info {
-      flex: 1;
-      max-width: 500px;
-      text-align: left;
-      font-size: 18px;
-      color: #ffffff;
+        max-width: 100%; /* Allow contact info to take full width on smaller screens */
     }
-  
-    .contact-info p {
-      margin-bottom: 15px;
-    }
-  
-    .contact-info a {
-      color: #00fddc;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-  
-    .contact-info a:hover {
-      color: #e94560;
-    }
+}
+
   </style>
-  <br>
-  <footer>
+  
+<footer>
     <p>&copy; 2024 Sudarshan Chakra Cyber Security. All rights reserved.</p>
-  </footer>
+</footer>
+
+<style>
+    footer {
+        background-color: #1a1a2e; /* Set the background color */
+        color: #ffffff; /* Set the text color to white for contrast */
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 16px;
+    }
+</style>
+
 
   <script>
     function toggleMenu() {
@@ -741,5 +777,6 @@
       showSlide(currentSlide + 1);
     }
   </script>
+  
 </body>
 </html>
