@@ -150,100 +150,564 @@
   </style>
 </head>
 <body>
-  <header id="header">
-    <div class="logo-container">
-      <img src="logo.png" alt="Website Logo" class="logo">
-      <div class="visit-note">Empowering Cyber Safety in a Digital World</div>
-    </div>
-    <nav>
-      <button class="menu-icon" aria-label="Toggle Menu" onclick="toggleMenu()">&#9776;</button>
-      <ul id="menu">
-        <li><a class="nav-link" href="#home">Home</a></li>
-        <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#services">Services</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header id="header">
+        <div class="logo-container">
+          <img src="logo.png" alt="Website Logo" class="logo">
+          <div class="visit-note">Empowering Cyber Safety in a Digital World</div>
+        </div>
+        <nav>
+          <!-- Hamburger Menu Icon -->
+          <button class="menu-icon" aria-label="Toggle Menu" onclick="toggleMenu()">&#9776;</button>
+          <ul id="menu">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#services">Services</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+            <li><a class="nav-link" href="#contact"></a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <!-- CSS -->
+      <style>
+        /* Base styles */
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+      background-color: #0f3460;
+        }
+      
+        /* Header styles */
+        #header {
+          background-color: #2c3e50;
+          padding: 10px 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: #fff;
+        }
+      
+        .logo-container {
+          display: flex;
+          align-items: center;
+        }
+      
+        .logo {
+          width: 50px;
+          height: auto;
+          margin-right: 10px;
+        }
+      
+        .visit-note {
+          font-size: 14px;
+          font-weight: 300;
+        }
+      
+        nav {
+          position: relative;
+        }
+      
+        /* Menu icon (Hamburger) */
+        .menu-icon {
+          display: none;
+          background: none;
+          border: none;
+          font-size: 30px;
+          color: #fff;
+          cursor: pointer;
+        }
+      
+        /* Menu list styles */
+        #menu {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+        }
+      
+        #menu li {
+          margin: 0 15px;
+        }
+      
+        #menu a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 16px;
+        }
+      
+        #menu a:hover {
+          color: #00fddc;
+        }
+      
+        /* Responsive Menu (Mobile View) */
+        @media screen and (max-width: 768px) {
+          .menu-icon {
+            display: block;
+          }
+      
+          #menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            background-color: #2c3e50;
+            width: 200px;
+            padding: 20px;
+            border-radius: 8px;
+          }
+      
+          #menu li {
+            margin: 10px 0;
+            text-align: center;
+          }
+      
+          #menu.active {
+            display: flex;
+          }
+        }
+      </style>
+      
+      <!-- JavaScript -->
+      <script>
+        // Toggle the menu on mobile
+        function toggleMenu() {
+          const menu = document.getElementById('menu');
+          menu.classList.toggle('active');
+        }
+      </script>
+      
 
   <section id="home">
     <div class="slider">
       <div class="slides">
+        <!-- Slide 1 -->
         <div class="slide" style="background-image: url('tech-bg1.jpg');">
           <div class="content">
             <h1>Welcome to Sudarshan Chakra Cyber Security</h1>
             <p>
-              Your trusted partner in navigating the ever-changing digital landscape. 
-              We provide innovative solutions, cutting-edge research, and reliable resources to help individuals and businesses stay ahead of cyber threats. 
-              With a focus on empowering you with knowledge and skills, we aim to create a safer online world for everyone.
+              In today’s fast-paced digital era, cybersecurity is not just a necessity—it's a responsibility. 
+              At Sudarshan Chakra Cyber Security, we are dedicated to being your guiding light in safeguarding your digital footprint. 
+              Our mission is to deliver innovative solutions, industry-leading practices, and in-depth expertise to protect you from evolving cyber threats.
+            </p>
+            <p>
+              Join us in our endeavor to foster a secure online environment where individuals and organizations thrive without the fear of cyberattacks.
             </p>
           </div>
         </div>
+  
+        <!-- Slide 2 -->
         <div class="slide" style="background-image: url('cyber-bg2.jpg');">
           <div class="content">
             <h2>Understanding Cyber Threats</h2>
             <p>
-              Cybersecurity is more critical than ever. From phishing scams to sophisticated ransomware attacks, 
-              the digital world is rife with dangers. At Sudarshan Chakra Cyber Security, 
-              we keep you updated on the latest trends, attack methods, and prevention strategies.
+              The cyber threat landscape is vast and dynamic, presenting challenges that demand vigilance and knowledge. 
+              From deceptive phishing emails to advanced ransomware campaigns, every corner of the internet holds potential risks.
+            </p>
+            <p>
+              At Sudarshan Chakra Cyber Security, we simplify complexity by breaking down the latest threats, 
+              analyzing attack methodologies, and equipping you with actionable insights to fortify your digital defenses.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Slide 3 -->
+        <div class="slide" style="background-image: url('cyber-bg3.jpg');">
+          <div class="content">
+            <h2>Empowering Through Education</h2>
+            <p>
+              Education is the first line of defense in cybersecurity. 
+              Our tailored workshops, awareness programs, and training sessions are designed to equip you with the tools and confidence needed to identify, mitigate, and respond to cyber threats effectively.
+            </p>
+            <p>
+              Discover how we’re shaping a generation of cyber-savvy individuals who are prepared to defend against digital adversaries.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Slide 4 -->
+        <div class="slide" style="background-image: url('cyber-bg4.jpg');">
+          <div class="content">
+            <h2>Our Vision for a Secure Future</h2>
+            <p>
+              We envision a world where every individual and organization can explore the digital realm without compromising their security. 
+              Through relentless innovation, community engagement, and cutting-edge research, we strive to make this vision a reality.
+            </p>
+            <p>
+              Partner with us as we pave the way toward a future where cybersecurity is accessible, effective, and empowering for all.
             </p>
           </div>
         </div>
       </div>
+  
+      <!-- Navigation Buttons -->
       <div class="slider-buttons">
         <button class="prev" onclick="previousSlide()">&#10094;</button>
         <button class="next" onclick="nextSlide()">&#10095;</button>
       </div>
     </div>
   </section>
-
+  
   <section id="about">
     <h1>About Us</h1>
     <p>
-      Sudarshan Chakra Cyber Security is a leading name in promoting cybersecurity awareness and education.
-      Our team comprises experts with a deep understanding of emerging threats and the latest defensive strategies. 
-      Through workshops, training sessions, and hands-on projects, we ensure that you are well-equipped to tackle digital risks.
+      At <strong>Sudarshan Chakra Cyber Security (SCCS)</strong>, we are more than just a cybersecurity company—we are a mission-driven organization committed to empowering individuals and institutions in the digital age. Founded by passionate cybersecurity professionals, our journey began with the goal of making the internet a safer space for everyone.
     </p>
-    <h2>Our Mission</h2>
-    <p>
-      To empower individuals, businesses, and organizations with the tools and knowledge required to safeguard their digital presence.
-      Our goal is to foster a culture of cybersecurity vigilance that ensures safety in every corner of the online world.
-    </p>
+    <div class="about-content">
+      <div class="mission">
+        <h2>Our Mission</h2>
+        <p>
+          To equip individuals, educational institutions, and businesses with the knowledge and tools to navigate the ever-evolving cyber threat landscape. Through our specialized programs and cutting-edge solutions, we aim to reduce risks, raise awareness, and cultivate a community that values cybersecurity.
+        </p>
+      </div>
+      <div class="vision">
+        <h2>Our Vision</h2>
+        <p>
+          A world where everyone—from students to CEOs—feels confident and secure in their digital interactions. We envision a future where proactive education and robust defense mechanisms make cyber threats a thing of the past.
+        </p>
+      </div>
+      <div class="values">
+        <h2>Our Core Values</h2>
+        <ul>
+          <li><strong>Integrity:</strong> We uphold the highest ethical standards in every aspect of our work.</li>
+          <li><strong>Education:</strong> Knowledge is the key to protection, and we strive to share it widely.</li>
+          <li><strong>Innovation:</strong> Our solutions evolve with the changing threat landscape to ensure optimal defense.</li>
+          <li><strong>Empowerment:</strong> We believe in equipping individuals with skills to protect themselves and others.</li>
+          <li><strong>Community:</strong> Collaboration and mutual support are at the heart of cybersecurity excellence.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="team">
+      <h2>Meet Our Team</h2>
+      <p>
+        SCCS is led by a diverse team of experts, including ethical hackers, data analysts, and cybersecurity strategists. Together, we bring decades of experience and an unwavering commitment to excellence. Our founder, Vigneshwar (Vishwa), is a visionary entrepreneur who believes in fostering cybersecurity awareness at every level.
+      </p>
+    </div>
+    <div class="impact">
+      <h2>Our Impact</h2>
+      <p>
+        Since our inception, SCCS has trained thousands of students and professionals through workshops, ethical hacking courses, and awareness programs. From conducting simulations of real-world cyberattacks to guiding career paths in cybersecurity, we’ve made a significant impact in the community, creating a safer digital environment for all.
+      </p>
+    </div>
   </section>
-
+  
+  <style>
+    #about {
+      background-color: #1a1a2e; /* Dark background for a tech feel */
+      color: #ffffff;
+      padding: 60px 30px;
+      text-align: center;
+    }
+  
+    #about h1, #about h2 {
+      color: #00fddc;
+    }
+  
+    #about h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  
+    #about h2 {
+      font-size: 30px;
+      margin: 20px 0;
+    }
+  
+    #about p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+  
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+  
+    .mission, .vision, .values {
+      flex: 1;
+      max-width: 350px;
+      padding: 20px;
+      background-color: rgba(15, 52, 96, 0.9); /* Transparent overlay effect */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    .values ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    .values ul li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+  
+    .values ul li strong {
+      color: #e94560;
+    }
+  
+    .team, .impact {
+      margin-top: 40px;
+    }
+  
+    .team p, .impact p {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+  </style>
+  
   <section id="services">
     <h1>Our Services</h1>
-    <h2>1. Comprehensive Security Audits</h2>
-    <p>
-      A meticulous evaluation of your organization's security infrastructure to identify vulnerabilities 
-      and ensure compliance with industry standards. Gain actionable insights to strengthen your defenses.
-    </p>
-    <h2>2. Penetration Testing</h2>
-    <p>
-      Simulate real-world cyberattacks with our expert penetration testers. Identify weak points in your system 
-      before malicious actors exploit them, and receive tailored recommendations for improvement.
-    </p>
-    <h2>3. Tailored Cybersecurity Training</h2>
-    <p>
-      Interactive training programs designed for all knowledge levels. From beginners to seasoned professionals, 
-      our courses cover topics like ethical hacking, malware analysis, and network defense strategies.
-    </p>
+    <p>At Sudarshan Chakra Cyber Security, we are committed to offering comprehensive cybersecurity solutions tailored to meet the unique needs of individuals, businesses, and institutions. Explore our cutting-edge services designed to safeguard your digital assets.</p>
+  
+    <div class="services-container">
+      <div class="service">
+        <h2>1. Vulnerability Assessments</h2>
+        <p>Identify potential weaknesses in your network, systems, and applications before cybercriminals do. Our detailed vulnerability assessments include:</p>
+        <ul>
+          <li>Thorough analysis of network configurations and systems.</li>
+          <li>Identification of outdated software and patches.</li>
+          <li>Customized recommendations to mitigate risks.</li>
+        </ul>
+      </div>
+  
+      <div class="service">
+        <h2>2. Penetration Testing</h2>
+        <p>Simulate real-world cyberattacks to uncover vulnerabilities in your infrastructure. Our ethical hacking experts provide:</p>
+        <ul>
+          <li>Simulated attacks to test defenses under real-world conditions.</li>
+          <li>Comprehensive reports detailing vulnerabilities and solutions.</li>
+          <li>Post-test consultation to strengthen your defenses.</li>
+        </ul>
+      </div>
+  
+      <div class="service">
+        <h2>3. Security Audits</h2>
+        <p>Assess and improve the effectiveness of your existing security policies and measures. Our audits include:</p>
+        <ul>
+          <li>Evaluation of compliance with industry standards (ISO, GDPR, etc.).</li>
+          <li>Analysis of existing security protocols and controls.</li>
+          <li>Actionable recommendations for strengthening security posture.</li>
+        </ul>
+      </div>
+  
+      <div class="service">
+        <h2>4. Cyber Awareness Training</h2>
+        <p>Empower your team with the knowledge to detect and prevent cyber threats. Our training programs offer:</p>
+        <ul>
+          <li>Workshops on phishing detection and secure browsing.</li>
+          <li>Guidelines for safe password practices and multi-factor authentication.</li>
+          <li>Regular updates on emerging cyber threats.</li>
+        </ul>
+      </div>
+  
+      <div class="service">
+        <h2>5. Incident Response and Recovery</h2>
+        <p>Minimize damage and restore normalcy in the event of a cyber incident. Our services include:</p>
+        <ul>
+          <li>Rapid response to security breaches.</li>
+          <li>Data recovery and forensic analysis to determine the source of the attack.</li>
+          <li>Development of incident management plans to prevent future occurrences.</li>
+        </ul>
+      </div>
+  
+      <div class="service">
+        <h2>6. Managed Security Services</h2>
+        <p>Leave your cybersecurity management to the experts. Our managed services include:</p>
+        <ul>
+          <li>24/7 monitoring of your IT environment for threats.</li>
+          <li>Regular updates and patches to maintain system integrity.</li>
+          <li>Customized dashboards for real-time security insights.</li>
+        </ul>
+      </div>
+    </div>
   </section>
+  
+  <style>
+    #services {
+      background-color: #1a1a2e;
+      color: #ffffff;
+      padding: 60px 30px;
+      text-align: center;
+    }
+  
+    #services h1 {
+      font-size: 36px;
+      color: #00fddc;
+      margin-bottom: 20px;
+    }
+  
+    #services p {
+      font-size: 18px;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+  
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+  
+    .service {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 255, 220, 0.5);
+    }
+  
+    .service h2 {
+      font-size: 24px;
+      color: #e94560;
+      margin-bottom: 15px;
+    }
+  
+    .service p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+  
+    .service ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .service ul li {
+      font-size: 16px;
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 20px;
+    }
+  
+    .service ul li:before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      color: #00fddc;
+    }
+  </style>
+  
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <form>
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <div class="contact-info">
-      <p>Email: <a href="mailto:sudarsanachakra.cs@gmail.com">sudarsanachakra.cs@gmail.com</a></p>
-      <p>Phone: +91 8682875077</p>
+    <p>We’d love to hear from you! Reach out to us for inquiries, collaborations, or any assistance you need regarding cybersecurity.</p>
+    <div class="contact-container">
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:sudarsanachakra.cs@gmail.com">sudarsanachakra.cs@gmail.com</a></p>
+        <p><strong>Phone:</strong> +91 86673 75443</p>
+        <p><strong>Address:</strong> Sudarshan Chakra Cyber Security HQ, Bengaluru, India</p>
+      </div>
     </div>
   </section>
-
+  
+  <style>
+    #contact {
+      background-color: #0f3460; /* Dark theme background */
+      padding: 60px 30px;
+      text-align: center;
+      color: #ffffff;
+    }
+  
+    #contact h2 {
+      font-size: 36px;
+      color: #00fddc;
+      margin-bottom: 20px;
+    }
+  
+    #contact p {
+      font-size: 18px;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+  
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+  
+    .contact-form {
+      flex: 1;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      background-color: #1a1a2e;
+      color: #ffffff;
+      border: 1px solid #00fddc;
+      border-radius: 5px;
+      font-size: 16px;
+      outline: none;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+  
+    .contact-form input:focus, .contact-form textarea:focus {
+      box-shadow: 0 0 10px 2px #00fddc;
+      transform: scale(1.02);
+    }
+  
+    .contact-form textarea {
+      height: 120px;
+      resize: none;
+    }
+  
+    .contact-form button {
+      padding: 15px;
+      background-color: #e94560;
+      color: #ffffff;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+  
+    .contact-form button:hover {
+      background-color: #ff6767;
+      transform: scale(1.05);
+    }
+  
+    .contact-info {
+      flex: 1;
+      max-width: 500px;
+      text-align: left;
+      font-size: 18px;
+      color: #ffffff;
+    }
+  
+    .contact-info p {
+      margin-bottom: 15px;
+    }
+  
+    .contact-info a {
+      color: #00fddc;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+  
+    .contact-info a:hover {
+      color: #e94560;
+    }
+  </style>
+  <br>
   <footer>
     <p>&copy; 2024 Sudarshan Chakra Cyber Security. All rights reserved.</p>
   </footer>
