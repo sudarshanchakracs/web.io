@@ -367,12 +367,14 @@
           To equip individuals, educational institutions, and businesses with the knowledge and tools to navigate the ever-evolving cyber threat landscape. Through our specialized programs and cutting-edge solutions, we aim to reduce risks, raise awareness, and cultivate a community that values cybersecurity.
         </p>
       </div>
+      <a></a>
       <div class="vision">
         <h2>Our Vision</h2>
         <p>
           A world where everyone—from students to CEOs—feels confident and secure in their digital interactions. We envision a future where proactive education and robust defense mechanisms make cyber threats a thing of the past.
         </p>
       </div>
+      <a></a>
       <div class="values">
         <h2>Our Core Values</h2>
         <ul>
@@ -399,71 +401,107 @@
   </section>
   
   <style>
-    #about {
-      background-color: #1a1a2e; /* Dark background for a tech feel */
-      color: #ffffff;
-      padding: 60px 30px;
-      text-align: center;
-    }
-  
-    #about h1, #about h2 {
-      color: #00fddc;
-    }
-  
-    #about h1 {
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
-  
-    #about h2 {
-      font-size: 30px;
-      margin: 20px 0;
-    }
-  
-    #about p {
-      font-size: 18px;
-      line-height: 1.8;
-      margin-bottom: 20px;
-    }
-  
-    .about-content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 30px;
-    }
-  
-    .mission, .vision, .values {
-      flex: 1;
-      max-width: 350px;
-      padding: 20px;
-      background-color: rgba(15, 52, 96, 0.9); /* Transparent overlay effect */
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-  
-    .values ul {
-      list-style-type: none;
-      padding: 0;
-    }
-  
-    .values ul li {
-      margin-bottom: 10px;
-      font-size: 16px;
-    }
-  
-    .values ul li strong {
-      color: #e94560;
-    }
-  
-    .team, .impact {
-      margin-top: 40px;
-    }
-  
-    .team p, .impact p {
-      font-size: 18px;
-      line-height: 1.8;
-    }
+  #about {
+  background-color: #1a1a2e; /* Dark background for a tech feel */
+  color: #ffffff;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+#about h1, #about h2 {
+  color: #00fddc;
+}
+
+#about h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#about h2 {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 40px; /* Add space below for the team/impact sections */
+}
+
+.mission, .vision, .values {
+  flex: 1;
+  max-width: 350px;
+  padding: 20px;
+  background-color: rgba(15, 52, 96, 0.9); /* Transparent overlay effect */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.values ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.values ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.values ul li strong {
+  color: #e94560;
+}
+
+.team, .impact {
+  margin-top: 40px;
+}
+
+.team p, .impact p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Mobile view styles */
+@media screen and (max-width: 768px) {
+  #about {
+    padding: 40px 20px; /* Reduced padding on mobile */
+  }
+
+  .about-content {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center the content */
+    gap: 20px;
+  }
+
+  .mission, .vision, .values {
+    max-width: 100%; /* Make sections take full width */
+    margin-bottom: 20px; /* Add space between sections */
+  }
+
+  .mission h2, .vision h2, .values h2 {
+    font-size: 1.5em; /* Slightly smaller heading for mobile */
+  }
+
+  .team, .impact {
+    text-align: center; /* Center the content for team and impact sections */
+  }
+
+  .team h2, .impact h2 {
+    font-size: 1.8em; /* Slightly smaller heading */
+  }
+
+  .team p, .impact p {
+    font-size: 16px; /* Adjust font size for readability */
+  }
+}
+
   </style>
   
   <section id="services">
